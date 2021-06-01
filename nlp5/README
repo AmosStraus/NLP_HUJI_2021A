@@ -1,0 +1,9 @@
+Amos Straus 311372833
+Brahan Wasson 320455116
+
+In this exercise we implemented the MST parser
+for unlabeled dependency parsing, using the average perceptron algorithm
+We used several features, such as Word bigrams and POS bigrams.
+As well as some additional features including the edges direction and length.
+We trained the model by the described scheme for 2 epochs
+and then tested it on the test set, results are discribed in the pdf and in the RESULTS file.

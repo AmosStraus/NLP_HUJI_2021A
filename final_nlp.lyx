@@ -1,0 +1,3516 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{culmus}
+
+% Convert the Lyx colors into more pleasent colors:
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{14,107,217}
+\definecolor{green}{RGB}{0,158,40}
+\definecolor{red}{RGB}{235,16,16}
+\definecolor{brown}{RGB}{164,66,0}
+\definecolor{orange}{RGB}{231,135,26}
+\definecolor{purple}{RGB}{94,53,177}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\size small
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+
+\size small
+)
+\numeric on
+7658
+\numeric off
+6( עיבוד שפה טבעית | עבודת סיום
+\end_layout
+
+\begin_layout Author
+
+\size small
+עמוס שטראוס | 
+\numeric on
+311372833
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size small
+שאלה 
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בשאלה הזו נשתמש במודל 
+\begin_inset Formula $CRF$
+\end_inset
+
+ מסדר 
+\numeric on
+1
+\numeric off
+ )ביגרם(, שאוסף התגיות הוא:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $L=\left\{ None,Begin-Person,Continue-Person,Begin-Location,Continue-Location\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נכתוב כקיצור 
+\begin_inset Formula $B-Location,C-Location,B-Person,C-Person$
+\end_inset
+
+ עבור 
+\begin_inset Formula $Begin/Continue$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הערה, לא הבנתי את הקלט כל כך והתשובה במייל הייתה שאני יכול להחליט כל עוד
+ הוא ברור:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Quotes eld
+\end_inset
+
+למעשה אתה שואל על צורת הקלט שאתה מקבל.
+ אתה מקבל משפט מתויג בנוטציה 1 כקלט.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אתה רשאי להחליט על צורת הקלט כל עוד אתה מסביר אותה בפירוט, והיא מתאימה לנוטציה
+ 1.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לכן אניח שצורת הקלט היא משפט שכל מילה )או סימן פיסוק( בו או לא מקבלים תיוג
+ בכלל או 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+מקבלים רק תיוג מתוך 
+\begin_inset Formula $Person,Location$
+\end_inset
+
+ למשל בדוגמה:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נוטציה )
+\numeric on
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $(John,Person)\,(lives)\,(in)\,(New,Location)\,(York,Location)\,(City,Location)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+תתורגם לנוטציה )
+\numeric on
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $(John,B-Person)\,(lives,None)\,(in,None)\,(New,B-Location)\,(York,C-Location)\,(City,C-Location)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)א(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הפסודוקוד יעבור על הקלט לפי נוטציה )
+\numeric on
+1
+\numeric off
+( וכל רצף של מילים מתויגות יהפוך לרצף של של מילים מתויגות עם נוטציה )
+\numeric on
+2
+\numeric off
+( כאשר המילה הראשונה ברצף תקבל 
+\begin_inset Formula $\text{B=being}$
+\end_inset
+
+ ואז את התיוג המקורי )
+\begin_inset Formula $\text{being/person}$
+\end_inset
+
+( ואחריה ברצף המילים יהיו עם התיוג המקורי ו
+\begin_inset Formula $\text{C=continue}$
+\end_inset
+
+, עד לסיום הרצף המתוייג.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+- קלט 
+\begin_inset Formula $x=(x_{1},l_{1}),..,(x_{n},l_{n})$
+\end_inset
+
+ משפט מתויג לפי נוטציה )
+\numeric on
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+- לכל 
+\begin_inset Formula $i\in\{1,..,n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+)
+\numeric on
+1
+\numeric off
+( אם 
+\begin_inset Formula $i=1$
+\end_inset
+
+ בדוק האם 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ מתוייג עם 
+\begin_inset Formula $l\in\{Person,Location\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אם כן הוסף את המילה של 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ עם תיוג מתאים 
+\begin_inset Formula $(x_{1},B-l)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אם 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ לא מתוייג הוסף את 
+\begin_inset Formula $(x_{1},None)$
+\end_inset
+
+.
+ קדם את 
+\begin_inset Formula $i$
+\end_inset
+
+ והמשך למילה הבאה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+)
+\numeric on
+2
+\numeric off
+( אם 
+\begin_inset Formula $i>1$
+\end_inset
+
+ בדוק האם 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מתוייג עם 
+\begin_inset Formula $l\in\{Person,Location\}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,$
+\end_inset
+
+אם הוא לא מתוייג הוסף את המילה 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ בתיוג המתאים 
+\begin_inset Formula $(x_{i},None=l'_{i})$
+\end_inset
+
+.
+ קדם את 
+\begin_inset Formula $i$
+\end_inset
+
+ והמשך.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,$
+\end_inset
+
+אם הוא כן מתוייג עם 
+\begin_inset Formula $l_{i}\in\{Person,Location\}$
+\end_inset
+
+ בדוק האם באיטרציה הקודמת תוייגה 
+\begin_inset Formula $(x_{i-1},l'_{i-1})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,$
+\end_inset
+
+אם 
+\begin_inset Formula $l'_{i-1}$
+\end_inset
+
+ מאותו טיפוס של 
+\begin_inset Formula $entitiy$
+\end_inset
+
+/תיוג )מיקום או אישיות אצלנו( כמו של 
+\begin_inset Formula $l_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,\,\,\,\,\,\,$
+\end_inset
+
+- אם 
+\begin_inset Formula $l_{i}=Person$
+\end_inset
+
+ וגם 
+\begin_inset Formula $l'_{i-1}\in\left\{ B-Person,C-Person\right\} $
+\end_inset
+
+ הוסף את 
+\begin_inset Formula $(x_{i},C-Person=l'_{i})$
+\end_inset
+
+.
+ קדם את 
+\begin_inset Formula $i$
+\end_inset
+
+ והמשך.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,\,\,\,\,\,\,$
+\end_inset
+
+- אם 
+\begin_inset Formula $l_{i}=Location$
+\end_inset
+
+ וגם 
+\begin_inset Formula $l'_{i-1}\in\left\{ B-Location,C-Location\right\} $
+\end_inset
+
+ הוסף את 
+\begin_inset Formula $(x_{i},C-Location)$
+\end_inset
+
+.
+ קדם את 
+\begin_inset Formula $i$
+\end_inset
+
+ והמשך.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,$
+\end_inset
+
+אחרת בהכרח 
+\begin_inset Formula $l'_{i-1}$
+\end_inset
+
+ מתיוג 
+\begin_inset Formula $None$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $l_{i-1}$
+\end_inset
+
+ הקודם לא תויג והנוכחי כן, או ש
+\begin_inset Formula $l'_{i-1}$
+\end_inset
+
+ לא מאותו טיפוס תיוג
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,\,$
+\end_inset
+
+ )למשל הקודם 
+\begin_inset Formula $l_{i-1}$
+\end_inset
+
+ 
+\begin_inset Formula $Location$
+\end_inset
+
+ והנוכחי 
+\begin_inset Formula $l_{i}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $Person$
+\end_inset
+
+ או ההפך( בכל מקרה המילה ה-
+\begin_inset Formula $i$
+\end_inset
+
+ היא ראשונה ברצף
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\,\,\,\,\,\,\,$
+\end_inset
+
+ הוסף את 
+\begin_inset Formula $(x_{i},B-l_{i}=l'_{i})$
+\end_inset
+
+ והמשך למילה הבאה.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ב(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נתחיל מדוגמאות: נשים לב שאם קיבלנו 
+\begin_inset Formula $(Jerusalem,Location)\,(Israel,Loaction)$
+\end_inset
+
+ זה בהכרח יתרוגם ל
+\begin_inset Formula $(Jerusalem,B-Location)\,(Israel,C-Location)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אף פעם לא ל
+\begin_inset Formula $(Jerusalem,B-Location)\,(Israel,B-Location)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+או 
+\begin_inset Formula $(United,Location)\,(States,Location)\,(Of,Location)\,(America,Location)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בהכרח יתורגם ל
+\begin_inset Formula $(United,B-Location)$
+\end_inset
+
+ ו
+\numeric on
+3
+\numeric off
+ המילים שבאות אחריה יקבל 
+\begin_inset Formula $C-Location$
+\end_inset
+
+.
+ אין אפשרות לקבל פה תיוג התחלת מיקום לאמריקה 
+\begin_inset Formula $(America,B-Location)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+דוגמה נוספת נניח שיש ביטוי של צמד אנשים כמו לנון מקרטני, שני אנשים שונים
+ אך יקבלו תיוג של אישיות והמשך אישיות אם נקבל את הקלט למשל 
+\begin_inset Formula $[Lennon\,Maccartney]_{Person}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר אי אפשר לקודד רצף של אותו טיפוס/
+\begin_inset Formula $entity$
+\end_inset
+
+ בצורה שונה מ-
+\begin_inset Quotes erd
+\end_inset
+
+התחלה)טיפוס(,המשך)אותו טיפוס(,..,המשך)אותו טיפוס(
+\begin_inset Quotes eld
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר כל רצף תגיות אפשרי כזה:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $(x_{1},B-l),(x_{2},B-l),...(x_{k},B-l)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $l\in\{Person,Location\}$
+\end_inset
+
+ לא יתקבל ולא חוקי לפי הגדרת השאלה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר התיוג לפי נוטציה )
+\numeric on
+1
+\numeric off
+( מוגבל יותר ולעיתים לא נוכל לקודד רצף של 
+\begin_inset Formula $entities$
+\end_inset
+
+ שונים מאותו טיפוס 
+\begin_inset Formula $Person/Location$
+\end_inset
+
+, בעוד שהתיוג לפי נוטציה )
+\numeric on
+2
+\numeric off
+( עשיר יותר וכן יכול.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ג(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+מסעיף זה והלאה יהי 
+\begin_inset Formula $x=x_{1},..,x_{n}$
+\end_inset
+
+ משפט נתון כלשהו 
+\begin_inset Formula $B(x),A(x)$
+\end_inset
+
+ כמו שסומנו בשאלה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נשים לב ש
+\begin_inset Formula $e^{t}>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+.
+ לכן עבור רצף 
+\begin_inset Formula $y=y'=B-l$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $l\in\{Person,Location\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נקבל 
+\begin_inset Formula $M_{i}(y,y')=\exp\left(w\cdot f(i,y',y,x)\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כמו כן 
+\begin_inset Formula $Z(x;w)=\stackrel[y\in L^{n}]{}{\sum}\stackrel[i=1]{n}{\prod}\exp\left(w\cdot f(i,y_{i},y_{i-1},x)\right)>0$
+\end_inset
+
+, כסכום מכפלות )סופיות( של גורמים חיובים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נובע כי גם מילוי הרצפים עד או החל מהמקום ה
+\begin_inset Formula $i\in[n]$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\alpha_{i}(y)=\text{\ensuremath{\underset{y_{1},..,y_{i}=y}{\sum}\stackrel[k=1]{i}{\prod}M_{k}(y_{k-1},y_{k})}}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ובדומה 
+\begin_inset Formula $\beta_{i}(y)$
+\end_inset
+
+ יהיו חיובים, כמכפלות סופיות של חיוביים וסכומים של מכפלות כאלה, כל אלה משמשים
+ באלגוריתם לחישוב ההתפלגות השולית של צלע.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לכן לא משנה מי הם הפיצ'רים והמשקלים 
+\begin_inset Formula $w,f$
+\end_inset
+
+ של המודל תמיד נקבל שיש הסתברות חיובית לעבור בצלע שתיצור רצף לא חוקי.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ולכן גם עבור רצף לא חוקי ויכיל לפחות מעבר אחד בצלע לא חוקית, 
+\begin_inset Formula $y\in A(x)$
+\end_inset
+
+ נקבל
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+Pr\left(y|x\right)=\frac{\prod_{i=1}^{n}\exp\left(w\cdot f(i,y_{i},y_{i-1},x)\right)}{Z(x;w)}>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כיוון שזו מנה ומכפלה )סופית( של גורמים חיוביים ממש.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+)נזכור כי 
+\begin_inset Formula $y_{0}=*$
+\end_inset
+
+ או 
+\begin_inset Formula $y_{0}=START$
+\end_inset
+
+ במקרי הבסיס לכן הסימונים מוגדרים( 
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ד(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בהנתן מודל 
+\begin_inset Formula $CRF$
+\end_inset
+
+ מאומן לבעייה זו.
+ נעזר ב 
+\begin_inset Formula $M',\alpha'$
+\end_inset
+
+ מערכים בגודל 
+\begin_inset Formula $n|L|$
+\end_inset
+
+ ו 
+\begin_inset Formula $n|L|^{2}$
+\end_inset
+
+ בהתאמה שממלאים בעזרת תכנון דינאמי.
+ נרצה להסיר את הצלעות שמחברות רצפים לא חוקיים, כלומר כל צלע 
+\begin_inset Formula $(y_{j},y_{j-1})\in L^{2}$
+\end_inset
+
+ כך ש:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $y_{j}=y_{j-1}\,and\,y_{j}\in\text{\left\{  B-Person,B-Location\right\}  }$
+\end_inset
+
+.
+ )*(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כיוון שכל כניסה בהן חיובית כמו שראינו ונרצה לחשב רק את 
+\begin_inset Formula $y\in B(x)$
+\end_inset
+
+ נעזר בתכנון דינאמי של 
+\begin_inset Formula $M'$
+\end_inset
+
+ נמלא כך:
+\begin_inset Formula 
+\[
+M_{i}'(y_{j},y_{j-1})=\begin{cases}
+0 & y_{j}=y_{j-1}\,\,and\,\,y_{j}\in\text{\left\{  B-Person,B-Location\right\}  }\\
+\exp\left(w\cdot f(i,y_{j},y_{j-1},x)\right) & else
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ככה כל מסלול שעובר דרך צלע לא חוקית יתאפס.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר כל מסלול שמכיל רצף תיוגים לא חוקי עבור משפט נתון 
+\begin_inset Formula $y\in A(x)$
+\end_inset
+
+ יכיל תת רצף לא חוקי, ולפחות צלע אחת לא חוקית 
+\begin_inset Formula $(y_{j},y_{j-1})$
+\end_inset
+
+ ולכן לפחות אחד מהגורמים במכפלה של 
+\begin_inset Formula $y$
+\end_inset
+
+ כזה יתאפס, וכל המכפלה גם.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כעת נוכל לחשב על ידי 
+\begin_inset Formula $M'_{i}$
+\end_inset
+
+ בתכנון דינאמי את:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\alpha'_{i}(v)=\text{\underset{v'}{\sum}\ensuremath{\alpha'_{i-1}(v')M'_{i}(v',v)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+גם כאן צלעות שאינן חוקיות יתאפסו ולא ייסכמו, לכן 
+\begin_inset Formula $\alpha'_{i}(v)$
+\end_inset
+
+ מכיל את סכום כל המסלולים עד למילה ה
+\begin_inset Formula $i$
+\end_inset
+
+ במשפט הנתון, שלא עוברים דרך צלע לא חוקית, ולכן את כל המסלולים החוקיים בלבד.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בסוף נחשב את 
+\begin_inset Formula $\mathcal{B}(x)$
+\end_inset
+
+ בעזרת 
+\begin_inset Formula $\alpha'$
+\end_inset
+
+ כך 
+\begin_inset Formula $\mathcal{B}(x)=\underset{v'}{\sum}\alpha'_{n+1}(v')$
+\end_inset
+
+, ונחזיר את 
+\begin_inset Formula $\frac{\mathcal{B}(x)}{Z(x)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כאשר 
+\begin_inset Formula $Z(x)$
+\end_inset
+
+ סוכם את כל המסלולים לפי הסכימה הרגילה שראינו בהרצאות ובאופן יעיל תוך שימוש
+ בתכנון דינאמי.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הביטוי 
+\begin_inset Formula $\mathcal{B}(x)$
+\end_inset
+
+ יכיל את סכום ההסתברויות של כל רצפי תגיות חוקיים על פי המודל הנתון כי צלעות
+ במסלולים האלה גם לא שונו, בין 
+\begin_inset Formula $M$
+\end_inset
+
+ )ההסתברות השולית של צלע במודל שקיבלנו( ו
+\begin_inset Formula $M'$
+\end_inset
+
+ שחישבנו.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לסיכום כל מסלול חוקי לא יכיל שום צלע לא חוקית, וישאר כמו שהוא, וכל מסלול
+ לא חוקי יתאפס, נסיק כי :
+\begin_inset Formula 
+\[
+\underset{y\in B(x)}{\sum}Pr\left(y_{1},..,y_{n}|x_{1},..,x_{n}\right)=\frac{\mathcal{B}(x)}{Z(x)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+והחישוב יעיל.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+*הערה על יעילות 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לקבלת 
+\begin_inset Formula $M'$
+\end_inset
+
+ שהיא כאמור טבלה בגודל 
+\begin_inset Formula $|L|^{2}\cdot n$
+\end_inset
+
+ )השינוי בין 
+\begin_inset Formula $M$
+\end_inset
+
+ הרגילה שראינו בהרצאות ל
+\begin_inset Formula $M'$
+\end_inset
+
+ למעשה בעלות הבדיקה הקבועה האם הצלע חוקית או לא ואז לפי הצורך או ששמים 
+\numeric on
+0
+\numeric off
+ או אותו חישוב כמו במקרה הרגיל שבו מחשבים את
+\begin_inset Formula $M$
+\end_inset
+
+(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+החישוב של 
+\begin_inset Formula $Z'$
+\end_inset
+
+ דומה ל
+\begin_inset Formula $Z$
+\end_inset
+
+ ב
+\begin_inset Formula $CRF$
+\end_inset
+
+ רגיל אחרי שמלאנו את 
+\begin_inset Formula $\alpha'$
+\end_inset
+
+ בדומה ל
+\begin_inset Formula $\alpha$
+\end_inset
+
+ על ידי תכנות דינאמי לפי הנוסחה שהוזכרה בעלות 
+\begin_inset Formula $n\cdot|L|$
+\end_inset
+
+ תאים ומילוי כל תא מסתכל רק על השורה הקודמת של התגים כלומר בעלות 
+\begin_inset Formula $O(|L|)$
+\end_inset
+
+ סך הכל מילוי ב
+\begin_inset Formula $O(n\cdot|L|^{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size small
+שאלה 
+\numeric on
+2
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)א(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אי אפשר לשלב את האורך הכולל בתווים של עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ כפי שמוגדר בשאלה )סכום אורכי הצלעות בתווים עבור הצלעות שב
+\begin_inset Formula $T$
+\end_inset
+
+( כפיצ'ר ב
+\begin_inset Formula $edge-factored\,model$
+\end_inset
+
+ )
+\begin_inset Formula $EFM$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נגדיר את המשימה ואז נראה את הבעיתיות של הפיצ'ר המוצע.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+באופן כללי ב
+\begin_inset Formula $EFM$
+\end_inset
+
+ לכל צלע יש משקל שמתקבל על ידי מכפלה בין וקטור משקולות 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ופונקציית פיצ'רים 
+\begin_inset Formula $\Phi$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+עבור פונקציית פיצ'רים המקבלת שני קודקודים 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+ שנחשוב עליהם כצלע אפשרית בפרסינג )הקודקודים מייצגים מילים במשפט ומנסים
+ לאמוד חיבור אפשרי ביניהם( ואת המשפט 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נקבל את התוצאה מפונקציית הפיצ'רים 
+\begin_inset Formula $\Phi\left(v_{1},v_{2},x_{1:n}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בשאלה עוסקים ב- 
+\begin_inset Formula $\text{Unlabeled Dependency Parsing}$
+\end_inset
+
+.
+ במקרה עם תיוג נעביר גם תיוג כלשהו 
+\begin_inset Formula $\Phi\left(v_{1},v_{2},l,x_{1:n}\right),\,l\in TAGS$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כאשר אנחנו עוסקים ב
+\begin_inset Formula $Graph\,based\,parsing$
+\end_inset
+
+, לפי תבנית העבודה שלמדנו בהנתן משפט 
+\begin_inset Formula $x_{1:n}$
+\end_inset
+
+ אנחנו רוצים למצוא את ה
+\begin_inset Formula $MST\,Parser$
+\end_inset
+
+ אנחנו מוצאים בכל שלב את משקול/ניקוד כל צלע אפשרית על ידי 
+\begin_inset Formula 
+\[
+score_{\theta}\left(v_{1},v_{2},x_{1:n}\right)=\theta^{T}\cdot\Phi\left(v_{1},v_{2},x_{1:n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בתהליך הזה כפי שראינו דרושים:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\numeric on
+1
+\numeric off
+.
+ מישקול/ניקוד של הצלעות.
+ צריך לעשות באופן 
+\series bold
+בלתי תלוי
+\series default
+ ולשקף עד כמה גבוהה סבירות הצלע להופיע בעץ הפירסור.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\numeric on
+2
+\numeric off
+.
+ למצוא עץ פורש מקסימלי מכוון )
+\begin_inset Formula $MST\,parser$
+\end_inset
+
+( לפי הצלעות ומישקולם כפי שתאור ב
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לאחר שהגדרנו את הבעיה נוכל לשים לב שפיצ'ר כמו האורך הכולל בתווים של עץ 
+\begin_inset Formula $T$
+\end_inset
+
+, אינו פיצ'ר שיכול להיות מחושב באופן בלתי תלוי.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+זאת מאחר שכדי לחשב את האורך הכולל בתווים ולשקלל אותו ב
+\begin_inset Formula $score_{\theta}\left(v_{1},v_{2},x_{1:n}\right)$
+\end_inset
+
+ של צלע כלשהי
+\begin_inset Formula $(v_{1},v_{2})$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+צריך לדעת מי הן כל שאר הצלעות שנמצאות איתה כבר בעץ.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר הפיצ'ר הזה תלוי בבחירת כל שאר הצלעות ולא רק בזו שהעברנו ל
+\begin_inset Formula $score_{\theta}$
+\end_inset
+
+, כלומר זה לא פיצ'ר מתאים ל
+\begin_inset Formula $EFM$
+\end_inset
+
+ כי הדרישה שתהליך המישקול של כל צלע יהיה בלתי תלוי באחרות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נשים לב שבעצם אם היה פיצ'ר כזה עבור 
+\begin_inset Formula $EFM$
+\end_inset
+
+ אז היינו יודעים לשקלל את סכום אורכי הצלעות ב
+\begin_inset Formula $T$
+\end_inset
+
+ כפיצ'ר עבור צלע כלשהי, בפרט היינו יודעים לחשב את סכום אורכי הצלעות של 
+\begin_inset Formula $T$
+\end_inset
+
+ זה אומר שאנחנו כבר יודעים את סכום אורך כל צלע אחרת ב
+\begin_inset Formula $T$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אז חוזרים לנקודה שבשביל לדעת למשקל את הצלע צריך לדעת מראש מי הן הצלעות שנבחרו
+ )כדי לחשב את מספר האותיות במילים ביניהם(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אמנם בשביל לדעת מי הן הצלעות שנבחרו עבור עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ זה אומר שעלינו לדעת מראש מי הוא העץ הפורש המדובר 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כדי למצוא את ה
+\begin_inset Formula $MST\,parser$
+\end_inset
+
+ בשלב )
+\numeric on
+2
+\numeric off
+( צריך שוב לדעת מה המשקול שהתקבל מהפיצ'רים בשלב )
+\numeric on
+1
+\numeric off
+( נתנו לכל צלע, זה מצב מעגלי שמוביל לסתירה לאופן פעולת האלגוריתם.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כאמור הפיצ'ר לוקח בחשבון תלות בין צלעות והוא אינו בלתי תלוי בהנתן צלע בודדה.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ב(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נראה דוגמאות לפיצ'רים של עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ )
+\begin_inset Formula $parse\,tree$
+\end_inset
+
+( שלא ניתן לייצג באמצעות שני קודקודים אך ניתן באמצעות שלושה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ההבדל בין המודלים 
+\begin_inset Formula $EFM$
+\end_inset
+
+ ו
+\begin_inset Formula $grandparent\,model$
+\end_inset
+
+ הוא שהמישקול/ניקוד בשני מתאפשר גם על שלושה קודקודים רצופים המהווים רצף
+ קשתות של אב בן ונכד או )ילד אבא סבא איך שרוצים להסתכל על זה(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+במובן שהפיצ'רים מוגדרים על שלשות כלומר 
+\numeric on
+2
+\numeric off
+ זוגות צלעות בקשר המתואר שיוצרות שרשרת )ולא רק על זוג קודקודים כלומר צלע
+ אחת בנפרד(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+פורמאלית עבור 
+\begin_inset Formula $v_{i},v_{j},v_{k}\in V$
+\end_inset
+
+ כלשהם כך ש
+\begin_inset Formula $\left(v_{i},v_{j}\right)\in T$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(v_{j},v_{k}\right)\in T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כעת המישקול/ניקוד של של צלע אחת יכול להשפיע )לחיוב או לשליליה( על המישקול
+ של צלע אחרת אם הן באותה שרשרת.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר המישקול עבור שרשרת בה מופיעות שתי הצלעות 
+\begin_inset Formula $score_{\theta}\left(v_{1},v_{2},v_{3},x_{1:n}\right)$
+\end_inset
+
+, יכול להיות מושפע לטובה או לרעה בהנתן נוכחות של אחת מהצלעות בשרשרת 
+\begin_inset Formula $\left(v_{i},v_{j}\right)\left(v_{j},v_{k}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+במודל הזה מתאפשרת תלות בין
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ צלעות שונות באותה שרשרת, בשונה מה
+\begin_inset Formula $EFM$
+\end_inset
+
+ שם כאמור הניקוד/משקול נעשה על כל צלע באופן בלתי תלוי.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+דוגמה לפיצ'ר כזה תיהיה סוג של 
+\begin_inset Formula $TRIGRAM$
+\end_inset
+
+, שישקלל מידע על ה
+\begin_inset Formula $POS$
+\end_inset
+
+ של שרשרת קודקודים 
+\begin_inset Formula $v_{i},v_{j},v_{k}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ נמצא ביניהם כלומר 
+\begin_inset Formula $\left(v_{i},v_{j}\right)\in T$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(v_{j},v_{k}\right)\in T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נניח שהפיצ'ר בינארי והוא אינדיקטור עבור שלשה של 
+\begin_inset Formula $POS$
+\end_inset
+
+ מסויימת.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+דוגמאות שאני יכול לחשוב בהן פיצ'ר כזה יועיל הן, למשל מצבים של שם עצם שמחובר
+ לפועל שמחובר לעוד שם עצם, או למעשה כל שרשרת אינדיקטיבית של שלושה 
+\begin_inset Formula $POS\,Tag$
+\end_inset
+
+ שסביר יותר או פחות שתהיה ביניהם תלות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+score_{\theta}\left(v_{1},v_{2},v_{3},x_{1:n}\right)=1\iff v_{1}\,is\,\,NN\land v_{2}\,is\,V\land v_{3}\,is\,NN
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+דוגמה נוספת לפיצ'ר אחר למודל 
+\begin_inset Formula $grandparent\,model$
+\end_inset
+
+ יכולה להיות אינדיקטור לכך שאם הצלע בין הסבא לאבא הייתה ימינה ובין האבא
+ לבן שמאלה, או כל סדר שביניהם, למשל בדוגמה שכתבתי אם 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ הסבא: 
+\begin_inset Formula 
+\[
+score_{\theta}\left(v_{1},v_{2},v_{3},x_{1:n}\right)=1\iff\left(v_{1},v_{2}\right)\,is\,\,right\,\,arc\land\left(v_{2},v_{3}\right)\,is\,\,left\,\,arc
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+או כל קומבינציה אחרת של שמאל ימין )למשל ימין ימין(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בדומה אפשר לשלב עוד פיצ'רים עבור המרחקים של הצלעות שמרכיבות את השרשרת, כלומר
+ שרשרת של קשתות ארוכות או קצרות, או קצרה ארוכה או ארוכה קצרה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כאשר נקבע סף מסוים שצלעות מאורך גדול ממנו הן ארוכות ומתחת אליו קצרות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size small
+שאלה 
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נתונים 
+\numeric on
+3
+\numeric off
+ מודלי שפה ומוגדר מודל שפה חדש:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+P_{M}\left(x_{n}|x1,...,x_{n-1}\right)=\sum_{i=1}^{3}\lambda_{i}P_{Mi}\left(x_{n}|x1,...,x_{n-1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)א(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+התנאי שצריך להתקיים )תנאי מספיק כפי שהובהר לי מהצוות( הוא שהלמדות יהיו צירוף
+ קמור.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\lambda_{1}+\lambda_{2}+\lambda_{3}=1,\,and\,\forall i\in[3]\,\lambda_{i}\ge0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ראשית נבחין כי בהנתן משפט 
+\begin_inset Formula $x=x_{1},..,x_{n}$
+\end_inset
+
+ נוכל להתנות במאורע 
+\begin_inset Formula $B=\left(X_{1}=x_{1},..,X_{n-1}=x_{n-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כיוון ש
+\begin_inset Formula $\forall i\in[3]\,P_{Mi}$
+\end_inset
+
+ היא פונקציית הסתברות אז גם 
+\begin_inset Formula $P_{Mi_{|B}}\left(X_{n}=w\right)=P_{Mi}\left(w|B\right)$
+\end_inset
+
+ היא פונקציית הסתברות )ראינו בקורס הסתברות( ובפרט גם נסכמות ל-
+\numeric on
+1
+\numeric off
+, על פני אוצר המילים 
+\begin_inset Formula $w\in V$
+\end_inset
+
+.
+ )*(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ולכן
+\begin_inset Formula 
+\[
+\sum_{w\in V}P_{M}\left(w|B\right)\overset{\text{by def.}}{=}\sum_{w\in V}\left(\sum_{i=1}^{3}\lambda_{i}P_{Mi}\left(w|B\right)\right)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כיוון שמספר הנסכמים סופי נוכל לשנות סדר סכימה )ובכל מקרה הם אי שליליים(
+ ואז הלמדות לא תלויות בסכימה על פני אוצר המילים.
+\begin_inset Formula 
+\[
+\sum_{i=1}^{3}\left(\sum_{w\in V}\lambda_{i}P_{Mi}\left(w|B\right)\right)=\sum_{i=1}^{3}\lambda_{i}\left(\sum_{w\in V}P_{Mi}\left(w|B\right)\right)\overset{(*)}{=}\lambda_{1}+\lambda_{2}+\lambda_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לכן אם 
+\begin_inset Formula $\lambda_{1}+\lambda_{2}+\lambda_{3}=1$
+\end_inset
+
+ זה תנאי מספיק לכך ש
+\begin_inset Formula $P_{M}$
+\end_inset
+
+ תיהיה פונקציית התפלגות מנורמלת )כי אם הם שונים היא לא מונרמלת ל
+\numeric on
+1
+\numeric off
+(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אם אחת הלמדות שלילית אפשר לבנות דוגמאות בה 
+\begin_inset Formula $P_{M}$
+\end_inset
+
+ תצא שלילית או לא תסכם ל-
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לכן בתוספת התנאי 
+\begin_inset Formula $\forall i\in[3]\,\lambda_{i}\ge0$
+\end_inset
+
+ ידאג לכך ש
+\begin_inset Formula $P_{M}$
+\end_inset
+
+ תהא פונקציה אישלילית ולכן שניהם יחד מהווים תנאי מספיק לכך שהפונקציה
+\begin_inset Formula $P_{M}$
+\end_inset
+
+ תגדיר התפלגות חוקית.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ב(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נסמן 
+\begin_inset Formula $C$
+\end_inset
+
+ את הקורפוס שנלקח מאתרי החדשות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נשים לב שעל מנת לקבוע את הלמדות ולהתאים את 
+\begin_inset Formula $M$
+\end_inset
+
+ הלמדות למשימה על אתרי החדשות, נרצה ללמוד צירוף קמור שימקסם את ההסתברות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נתייחס ל
+\begin_inset Formula $P_{M1},P_{M2},P_{M3}$
+\end_inset
+
+ הנתונים ונמצא את ערכי הלמדות האופטימליות עבור המודל 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר זו בעיית מקסימיזציה עבור ערכי 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+, נמצא את אלה שיפיקו הסתברות מקסימלית על 
+\begin_inset Formula $C$
+\end_inset
+
+, הביטוי שנקבל הוא:
+\begin_inset Formula 
+\[
+\underset{\lambda_{1},\lambda_{2},\lambda_{3}}{argmax}\left\{ \prod_{x\in C}P_{M}(x)\right\} =\underset{\lambda_{1},\lambda_{2},\lambda_{3}}{argmax}\left\{ \prod_{x\in C}\prod_{j=1}^{n(x)}P_{M}(x_{j}|x_{1},..,x_{j-1})\right\} =
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $n(x)$
+\end_inset
+
+ - אורך המשפט 
+\begin_inset Formula $x$
+\end_inset
+
+ ב
+\begin_inset Formula $C$
+\end_inset
+
+, והשתמשנו בכלל המכפלה/שרשרת להסתברות.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נוכל למקסם את 
+\begin_inset Formula $\log$
+\end_inset
+
+ הביטוי )את הלוג ליקליהוד( כיוון שזו פונקציה עולה ואנחנו לא מחפשים את ערך
+ המקסימום, אלא את ערכי 
+\begin_inset Formula $\lambda_{1},\lambda_{2},\lambda_{3}$
+\end_inset
+
+ שימקסמו.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בעיית האופטימיזציה אותה צריך לפתור שקולה לזו של לוג הביטוי, ועל ידי תכונות
+ של לוג של מכפלה נוכל לכתוב את הבעיה כך:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\underset{\lambda_{1},\lambda_{2},\lambda_{3}}{argmax}\left\{ \log\left(\prod_{x\in C}\prod_{j=1}^{n(x)}P_{M}(x_{j}|x_{1},..,x_{j-1})\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+=\underset{\lambda_{1},\lambda_{2},\lambda_{3}}{argmax}\left\{ \sum_{x\in C}\sum_{j=1}^{n(x)}\log\left(P_{M}(x_{j}|x_{1},..,x_{j-1})\right)\right\} \overset{\text{by def.}}{=}\underset{\lambda_{1},\lambda_{2},\lambda_{3}}{argmax}\left\{ \sum_{x\in C}\sum_{j=1}^{n(x)}\log\left(\sum_{i=1}^{3}\lambda_{i}P_{Mi}(x_{j}|x_{1},..,x_{j-1})\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ג(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בכדי לקחת בחשבון את המידע הנוסף נגדיר כמה שלשות שונות של למדות עבור המודל
+ ונשתמש בהן לפי מקרים, כולם יהיו צירופים קמורים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נקבל
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ שלשות 
+\begin_inset Formula $\lambda_{i}^{(j)}$
+\end_inset
+
+ 
+\begin_inset Formula $i,j\in[3]$
+\end_inset
+
+ שונות עבור רצפים שונים, פורמאלית נגדיר:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+עבור 
+\begin_inset Formula $j=2$
+\end_inset
+
+ נגדיר : 
+\begin_inset Formula $\lambda_{1}^{(2)}=0,\lambda_{2}^{(2)}=1,\lambda_{3}^{(2)}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+עבור 
+\begin_inset Formula $j=1$
+\end_inset
+
+ נגדיר: 
+\begin_inset Formula $\lambda_{1}^{(1)}=1,\lambda_{2}^{(1)}=0,\lambda_{3}^{(1)}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+עבור 
+\begin_inset Formula $j=3$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\lambda_{1}^{(3)},\lambda_{2}^{(3)},\lambda_{3}^{(3)}$
+\end_inset
+
+, השלשה שנלמדה מסעיף ב - כלומר הערכים הרגילים שנלמדו על קורפוס החדשות.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בעזרת 
+\numeric on
+3
+\numeric off
+ שלשות שכל שלשה מהווה צרוף קמור, אז נבחר את השלשה לפי:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\Pi(x_{n-1})=\begin{cases}
+(1) & x_{n-1}\,starts\,with\,'a'\\
+(2) & x_{n-1}\,starts\,with\,'b'\\
+(3) & else
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ואז 
+\begin_inset Formula 
+\[
+P_{M}(x_{n}|x_{1},..,x_{n-1})=\sum_{i=1}^{3}\lambda_{i}^{\Pi(x_{n-1})}P_{Mi}(x_{n}|x_{1},..,x_{n-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+והיא אכן פונקציית התפלגות כי כל השלשות שמוגדרות לפי המקרים מקיימות את התנאי
+ שראינו בסעיף א.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size small
+שאלה 
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+
+\size small
+מדובר במודל 
+\begin_inset Formula $Trigram\,MEMM$
+\end_inset
+
+.
+ ונעבוד לפי ההנחות בשאלה 
+\begin_inset Formula $y_{0}=y_{-1}=START$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $Y$
+\end_inset
+
+ קבוצת התיוג האפשריים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+P\left(y_{1},..,y_{n}|x_{1},..,x_{n}\right)=\prod_{i=1}^{n}P\left(y_{i}|x_{1},..,x_{n},y_{i-1},y_{i-2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+זהו מודל דיסקרימינטיבי הסתברותי לוג ליניארי )המניח שכל אחד מהגורמים במכפלה
+ הוא לוג ליניארי(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בשאלה זו הנחת המרקוביות מסדר 
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)א(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נוסחא מפורשת:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+P\left(y_{i}|x_{1},..,x_{n},y_{i-1},y_{i-2}\right)=\frac{\exp\left(w\cdot f(x_{1},..,x_{n},y_{i},y_{i-1},y_{i-2},i)\right)}{\sum_{y'\in Y}\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+פונקציית הפיצ'רים יכולה להיות לממשיים אך בדרך כלל ראינו פיצ'רים בינאריים
+ או אינדיקטורים
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הארגומנטים שמקבלת פונקציית הפיצ'רים 
+\begin_inset Formula $f(x_{1},..,x_{n},y_{i-1},y_{i-2},i)$
+\end_inset
+
+ הם :
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ייצוג כל המשפט 
+\begin_inset Formula $x=x_{1},..,x_{n}$
+\end_inset
+
+ שעבורו מנסים לחזות תיוג )למשל 
+\begin_inset Formula $POS$
+\end_inset
+
+(, בתוספת 
+\numeric on
+2
+\numeric off
+ תגים קודמים הרלוונטיים כי המודל מסדר שני 
+\begin_inset Formula $y_{i-1},y_{i-2}$
+\end_inset
+
+, ואת התג הנוכחי 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ שמנסים לחזות במשפט והמיקום שלו 
+\begin_inset Formula $i$
+\end_inset
+
+ )זה גם המיקום עבור המילה הנוכחית במשפט 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נזכור כי במודל זה יש נירמול לוקאלי, המכנה בביטוי המפרש מעלה: 
+\begin_inset Formula $Z(y_{i-1},y_{i-2};w)=\sum_{y'\in Y}\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ב(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נזכור כי המודל בהנתן סט האימון המתואר )כאשר נסמן בקיצור 
+\begin_inset Formula $x^{(i)}=x_{1}^{(i)},..,x_{n(i)}^{(i)}$
+\end_inset
+
+( הוא 
+\begin_inset Formula 
+\[
+P\left(y|x\right)=\prod_{i=1}^{N}\prod_{j=1}^{n(i)}P\left(y_{j}^{(i)}|x^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)}\right)=\prod_{i=1}^{N}\prod_{j=1}^{n(i)}\frac{\exp\left(w\cdot f(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)},j)\right)}{Z(y_{j-1}^{(i)},y_{j-2}^{(i)};w)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הלוג ליקליהוד המותנה הוא לוג על הביטוי הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל )מתכונות לוג של אקספוננט, לוג של מכפלה ומנה(:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+LL(w)=\sum_{i=1}^{N}\sum_{j=1}^{n(i)}\left[w\cdot f(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)-\log(Z(y_{j-1}^{(i)},y_{j-2}^{(i)};w))\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נכתוב את הנוסחא עבור הגרדיינט שלו, ראשית הנגזרות הכיווניות )תכונות גזירה
+ ליניארית+גזירה של לוג(:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\frac{\partial LL(w)}{\partial w_{k}}=\sum_{i=1}^{N}\sum_{j=1}^{n(i)}\left[f_{k}(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)-\frac{1}{Z(y_{j-1}^{(i)},y_{j-2}^{(i)};w)}\cdot\frac{\partial}{\partial w_{k}}Z(y_{j-1}^{(i)},y_{j-2}^{(i)};w)\right]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\sum_{i=1}^{N}\sum_{j=1}^{n(i)}\left[f_{k}(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)-\frac{\sum_{y'\in Y}\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)}{\sum_{y''\in Y}\exp\left(w\cdot f(x_{1},..,x_{n},y'',y_{i-1},y_{i-2},i)\right)}\cdot f_{k}(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+זו הנוסחא המפורשת, נשים לב שחלק זה המחוסר מאוד דומה להסתברות המפורשת ושלחלק
+ סכום זה כמו לחלק כל אחד מהנסכמים ולכן נוכל לכתוב גם כך:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\sum_{i=1}^{N}\sum_{j=1}^{n(i)}\left[f_{k}(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)-\sum_{y'\in Y}\frac{\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)}{\sum_{y''\in Y}\exp\left(w\cdot f(x_{1},..,x_{n},y'',y_{i-1},y_{i-2},i)\right)}\cdot f_{k}(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)\right]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\sum_{i=1}^{N}\sum_{j=1}^{n(i)}\left[f_{k}(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)-\sum_{y'\in Y}P\left(y'|x^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)}\right)\cdot f_{k}(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הגרדיינט יהיה כל הקורדינטות האלה בוקטור אחד בגודל 
+\begin_inset Formula $|w|=t$
+\end_inset
+
+ וקטור המשקלים הנלמד.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר 
+\begin_inset Formula $\nabla LL(w)=\left(\frac{\partial LL(w)}{\partial w_{1}},..,\frac{\partial LL(w)}{\partial w_{t}}\right)$
+\end_inset
+
+.
+ מפורשות:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+\nabla LL(w)=\sum_{i=1}^{N}\sum_{j=1}^{n(i)}\left[f(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)-\sum_{y'\in Y}P\left(y'|x^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)}\right)\cdot f(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ג(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ניתן לחשב את הגרדיאנט בזמן פולינומי בגודל הקלט, כאשר גודל פונקציית הפיצ'רים
+ כלומר הפלט שלה )השווה לוקטור המשקל 
+\begin_inset Formula $w$
+\end_inset
+
+( הוא גם פולינומי בגודל הקלט נסמן אותו 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נשים לב שיש לנו
+\begin_inset Formula $N$
+\end_inset
+
+ משפטים באורך 
+\begin_inset Formula $n(i)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i\in\{1,..,N\}$
+\end_inset
+
+.
+ כלומר סכום כל המילים המתוייגות )יתכנו חזרות( על פני המשפטים בקלט הוא 
+\begin_inset Formula $S=\sum_{i=1}^{N}n(i)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בחישוב הגרדיאנט אנחנו עוברים על כל 
+\begin_inset Formula $S$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $N$
+\end_inset
+
+ משפטים לכל אורכם בסיגמה הכפולה בגרדייאנט.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא ליניארי ובפרט פולינומי בגודל הקלט.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כעת נתבון בכל חישוב בתוך האיטרציות/סכימות החיצוניות כלומר הביטוי בתוך הסוגריים
+ המרובעים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בכל מחובר אנחנו מחשבים את הביטוי 
+\begin_inset Formula $f(x^{(i)},y_{j}^{(i)},y_{j-1}^{(i)}y_{j-2}^{(i)},j)$
+\end_inset
+
+ בזמן חסום על ידי קבוע עבור הערכים הנתונים כל פעם )זו פונקציית פיצ'רים וזמן
+ חישובה חסום ע
+\begin_inset Quotes erd
+\end_inset
+
+י החישוב הארוך ביותר של קלט -משפט, שלשת תיוגים ואינדקס(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+מהביטוי הזה מחסרים את הביטוי 
+\begin_inset Formula $\sum_{y'\in Y}P\left(y'|x^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)}\right)\cdot f(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר מכפלה וסכימה של 
+\begin_inset Formula $|Y|$
+\end_inset
+
+ גורמים כאשר את 
+\begin_inset Formula $f(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)$
+\end_inset
+
+ גם כן אפשר לחשב בזמן קבוע, ו
+\begin_inset Formula $|Y|$
+\end_inset
+
+ גודל כל התיוגים קבוע בהנתן קבוצת תיוגים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+באשר ל
+\begin_inset Formula $P\left(y'|x^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)}\right)$
+\end_inset
+
+ אנחנו יודעים כאשר מחשבים את 
+\begin_inset Formula $y'$
+\end_inset
+
+ כי כבר נתונים לנו 
+\numeric on
+2
+\numeric off
+ ערכי תיוגים קודמים 
+\begin_inset Formula $y_{j-1}^{(i)},y_{j-2}^{(i)}\in Y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+מסעיף א יודע שהביטוי הוא 
+\begin_inset Formula $\frac{\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)}{\sum_{y''\in Y}\exp\left(w\cdot f(x_{1},..,x_{n},y'',y_{i-1},y_{i-2},i)\right)}$
+\end_inset
+
+ כאשר את החישוב של המכפלה והאקספוננט - 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)$
+\end_inset
+
+ - אפשר לעשות בזמן פולינומי כיוון שהנחנו שגודלם 
+\begin_inset Formula $m$
+\end_inset
+
+ פולינומי בגודל הקלט.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ואת חישוב גורם הנירמול במכנה גם אפשר לעשות בצורה יעילה, למעשה זה סכום של
+ ביטויי 
+\begin_inset Formula $\exp\left(w\cdot f(x_{1},..,x_{n},y',y_{i-1},y_{i-2},i)\right)$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $y'\in Y$
+\end_inset
+
+ שחישבנו במונה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לכן נוכל לשמור את הסכום ובסוף נעבור על כל הערכים ונוכל לנרמל אותם,
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כך יהיה לנו את 
+\begin_inset Formula $\sum_{y'\in Y}P\left(y'|x^{(i)},y_{j-1}^{(i)},y_{j-2}^{(i)}\right)\cdot f(x^{(i)},y',y_{j-1}^{(i)}y_{j-2}^{(i)},j)$
+\end_inset
+
+ ויחד עם הפירוט הקודם זה כל הדרוש עבור מחובר אחד, לכן מחובר אחד בעלות פולינומית
+ מתוך 
+\begin_inset Formula $S$
+\end_inset
+
+ מחוברים, שגם 
+\begin_inset Formula $S$
+\end_inset
+
+ פולינומי כפי שתארתי.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נקבל כי זמן הריצה סך הכל פולינומי.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+)באופן שקול אפשר היה לחשב את המכפלה של הפיצ'ר וקטור עם 
+\begin_inset Formula $w$
+\end_inset
+
+ בעלות פולינומית עבור כל 
+\begin_inset Formula $y'\in Y$
+\end_inset
+
+ לשמור את הסכום של כולם את הביטוי עבור כל תג יחיד לחלק בסכום ולהפעיל 
+\begin_inset Formula $softmax$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $\pagebreak$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size small
+שאלה 
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נעסוק בבעיה של סיווג טקסט ל
+\numeric on
+3
+\numeric off
+ קטגוריות 
+\begin_inset Formula $L=\left\{ l_{1},l_{2},l_{3}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כאשר 
+\begin_inset Formula $x^{(i)}$
+\end_inset
+
+ המסמך או המשפט ה
+\begin_inset Formula $i$
+\end_inset
+
+ )תלוי באיך מתקבל הקלט בדיוק(, 
+\begin_inset Formula $y^{(i)}$
+\end_inset
+
+ התיוג האמיתי עבורו.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $L$
+\end_inset
+
+ מרחב התגיות/קטגוריות אפשריות.
+ כל תוצאה אפשרית לסיווג נסמן 
+\begin_inset Formula $y\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)א(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אנחנו רוצים מודל שידע לסווג מה הנושא מתוך 
+\begin_inset Formula $L$
+\end_inset
+
+ של טקסט כלשהו, בפיצ'רים בינאריים של 
+\begin_inset Formula $bag\,of\,words$
+\end_inset
+
+ אנחנו מייצגים את המשפטים כוקטורים בינאריים.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כל מילה ייחודית, היא פיצ'ר או מימד בייצוג של 
+\begin_inset Formula $bag\,of\,words$
+\end_inset
+
+, נכתוב 
+\begin_inset Formula $BOW$
+\end_inset
+
+ לקיצור.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לצורך כך מסדרים אוצר מילים נתון 
+\begin_inset Formula $V=\left\{ w_{i}\right\} _{i=1}^{|V|}$
+\end_inset
+
+ לפי סידור כלשהו )שצריך להשאר קבוע(.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כך שאם במשפט מופיעה המילה 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ אז הייצוג של הוקטור המתאים לפי גישה זו יקבל 
+\numeric on
+1
+\numeric off
+ בקורדינטה המתאימה 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ כך לגבי כל המילים )הייחודיות( מתוך 
+\begin_inset Formula $V$
+\end_inset
+
+ אוצר מילים נתון שהופיעו במשפט 
+\begin_inset Formula $x=x_{1},..,x_{n}$
+\end_inset
+
+ ו
+\numeric on
+0
+\numeric off
+ באחרות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר בהנתן מילה כלשהי לא משנה מה המקום בו היא מופיעה במשפט, תמיד היא תקבל
+ על ידי הפיצ'ר הבינארי את אותה קורדינטה בוקטור.
+ בסוף נקבל ייצוג של 
+\begin_inset Formula $x$
+\end_inset
+
+ על ידי וקטור בינארי שבו יש 
+\numeric on
+1
+\numeric off
+ בכל המילים במשפט 
+\begin_inset Formula $x_{1},..,x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לדוגמה: אם 
+\begin_inset Formula $V=\text{\{Amos, the, snow, is, bored, in\}}$
+\end_inset
+
+ אז עבור זו תיהיה דוגמה למשפט וייצוג לפי 
+\begin_inset Formula $BOW$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $[1,0,0,1,1,0]\leftarrow\text{Amos is bored}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+
+\size small
+באשר לפונקציית הפיצ'רים 
+\begin_inset Formula $\phi$
+\end_inset
+
+ היא צריכה לשקלל גם את התגיות האפשריות, כעת כל ייצוג בינארי של 
+\begin_inset Formula $BOW$
+\end_inset
+
+, כלומר כל משפט יקבל יהיו 
+\numeric on
+3
+\numeric off
+ בלוקים המתאימים ל
+\begin_inset Formula $L$
+\end_inset
+
+ )במקרה הכללי 
+\begin_inset Formula $|L|$
+\end_inset
+
+ בלוקים(.
+ בבלוק שמתאים לתג הנוכחי ש
+\begin_inset Formula $\phi(x,y)$
+\end_inset
+
+ מקבלת יופיע הייצוג הבינארי של המשפט ושאר הבלוקים יהיו בלוקים של אפסים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הערך של 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הוא וקטור באורך המשפט כפול מספר הקטגוריות, במקרה של המודל בשאלה זו, בהנתן
+ משפט 
+\begin_inset Formula $x=x_{1},..,x_{n}$
+\end_inset
+
+ אז הערך הוא וקטור באורך 
+\begin_inset Formula $3|V|$
+\end_inset
+
+, כגודל אוצר המילים כפול מספר המחלקות בקבוצת הסיווג.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אצלנו עבור תג ומשפט נתונים ב
+\begin_inset Formula $\phi(x,y)$
+\end_inset
+
+ 
+\numeric on
+2
+\numeric off
+ בלוקים יהיו ריקים ו
+\numeric on
+1
+\numeric off
+ לפי הפי'צרים הבינאריים של המילים שמופיעות במשפט.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אם נחזור לדוגמה שנתתי ונניח כי 
+\numeric on
+3
+\numeric off
+ הסיווגים האפשריים הם לימוד, חופשה או פנאי
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $L=\left\{ \text{leisure, study, vacation}\right\} $
+\end_inset
+
+ אז נקבל כי הייצוג על ידי 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הוא:
+\begin_inset Formula 
+\[
+\phi\left(\text{Amos is bored, leisure}\right)=[1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi\left(\text{Amos is bored, study}\right)=[0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi\left(\text{Amos is bored, vacation}\right)=[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+מודל לוג ליניארי משתמש בתוצאה של
+\begin_inset Formula $\phi$
+\end_inset
+
+ כפול וקטור משקלים 
+\begin_inset Formula $w$
+\end_inset
+
+ שהמודל לומד, מימדו של 
+\begin_inset Formula $w$
+\end_inset
+
+ צריך להיות כמו התוצאה של
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+עבור 
+\begin_inset Formula $x,y$
+\end_inset
+
+ משפט ותיוג כלשהם נחשב את הניקוד/מישקול שלהם כך 
+\begin_inset Formula $score_{w}(x,y)=w\cdot\phi(x,y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ניקח את המישקולים 
+\begin_inset Formula $score_{w}(x,y)=w\cdot\phi(x,y)$
+\end_inset
+
+ ונהפוך אותם לפונקציית הסתברות בעזרת 
+\begin_inset Formula $softmax$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כעת נוכל להגדיר את המודל ההסתברותי הלוג ליניארי: 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\[
+P_{w}(y|x)=\frac{\exp\left(w\cdot\phi(x,y)\right)}{\underset{y'\in L}{\sum}\exp\left(w\cdot\phi(x,y')\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נבחין כי אכן מתקבלת פונקציית הסתברות אי שלילית הנסכמת ל
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לא כתוב להרחיב על איך הלמידה פה גם נעשית, אמנם בדומה לשאלה קודמת גם פה הלמידה
+ מבוססת גרדיינט למציאת של 
+\begin_inset Formula $w$
+\end_inset
+
+ הממקסם את לוג הנראות המירבית המותנית על ה
+\begin_inset Formula $training\,data$
+\end_inset
+
+.
+ רק שפה הביטוי לגרדיינט מעט יותר פשוט.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לאחר שמצאנו את 
+\begin_inset Formula $w$
+\end_inset
+
+ וקטור המשקול באמצעות מידע האימון, ההיסק במודל מתבצע על ידי חיפוש ה
+\begin_inset Formula $y$
+\end_inset
+
+ שממקסם את ההסתברות המותנית 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בהנתן המשפט 
+\begin_inset Formula $x$
+\end_inset
+
+ כלומר הצבה של כל 
+\begin_inset Formula $y\in L$
+\end_inset
+
+ מציאת הערך שהמודל חוזה עבורו בהנתן המשפט, והחזרת הסיווג שקיבל ערך מקסימלי:
+\begin_inset Formula 
+\[
+\underset{y\in L}{\text{argmax}}\left\{ P_{w}\left(y|x\right)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+הערה: נבחין כי הנירמול הוא גורם קבוע במודל זה 
+\begin_inset Formula $\underset{y'\in L}{\sum}\exp\left(w\cdot\phi(x,y')\right)$
+\end_inset
+
+ ולכן אפשר בחיזוי לא להתייחס אליו ולמקסם ישר על המישקול 
+\begin_inset Formula $score_{w}(x,y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\size small
+)ב(
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נעשה שימוש ב
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ על מנת להתאים את ה
+\begin_inset Formula $log\,linear\,classifer$
+\end_inset
+
+ מסעיף קודם להתמודד טוב יותר עם המשימה בסעיף זה, כלומר להתמודד עם מילים
+ בקיצורים, איות שאינו סטנדרטי או עם שגיאות הכתיב.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+במקום להסתכל על וקטור כל המילים שהופיעו במסמך/משפט )כפי שעשינו בסעיף א עם
+ 
+\begin_inset Formula $bag\,of\,words$
+\end_inset
+
+(,
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נסתכל על ה
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ של המילים במסמך.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כפי שראינו בהרצאות 
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ שימושי כאשר יש הרבה מילים שהותאמו להם השיכונים בשיטה זו.
+ כך אפשר ללמוד על קשרים ויחסים בין מילים בעזרת היחסים בין הוקטורים של ה
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ המתאימים להם.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+שימוש זה יועיל למשימה שלנו כיוון שאין לנו 
+\begin_inset Formula $data$
+\end_inset
+
+ מתוייג מהסוג החדש, אך יש לנו מודל מאומן עבור 
+\begin_inset Formula $data$
+\end_inset
+
+ רגיל מהסוג הקודם, והרבה 
+\begin_inset Formula $data$
+\end_inset
+
+ לא מתוייג מהסוג החדש.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+על ידי ה
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ נוכל למצוא מילים דומות ושונות באמצעות המרחק בין הוקטורים 
+\begin_inset Formula $u,v$
+\end_inset
+
+ שיותאמו להם על ידי ה
+\begin_inset Formula $embedding$
+\end_inset
+
+.
+ למשל על ידי מדד ה
+\begin_inset Formula $similarty$
+\end_inset
+
+ עבור זוג הוקטורים.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+עבור מילים דומות נצפה שהזווית בין הוקטורים תיהיה קרובה יותר ל-
+\numeric on
+0
+\numeric off
+ בייצוג האוקלידי )מה שמעיד על קרבה(.
+ כלומר קוסינוס הזווית יהיה קרוב יותר ל
+\numeric on
+1
+\numeric off
+.
+ נוסחא מפורשת עבור ה
+\begin_inset Formula $similarity$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+similarity\left(u,v\right)=\frac{u\cdot v}{\|u\|\|v\|}=\frac{\stackrel[i=1]{n}{\sum}u_{i}v_{i}}{\sqrt{\stackrel[i=1]{n}{\sum}u_{i}^{2}}\sqrt{\stackrel[i=1]{n}{\sum}v_{i}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נקבל ייצוג של המילים משוכנות במרחב אוקלידי ממימד 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ - מימד של המרחב אליו ה
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ שלנו משכן- וייצוג יהיה יעיל אם מילים כמו 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $you$
+\end_inset
+
+ )קיצור(,
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $entzyclopidya$
+\end_inset
+
+ ו 
+\begin_inset Formula $Encyclopedia$
+\end_inset
+
+ )שגיאת כתיב( יהיה קרובות במרחב זה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אם נפעיל את ה
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ עבור המילים הלא ידועות שמופיעות ב
+\begin_inset Formula $data$
+\end_inset
+
+ הלא מתוייג, ונעשה ממוצע על השיכונים, ייתכן שנוכל למצוא ייצוג וקטורי עבור
+ המילה שישקף גם את המשמעות הסמנטית והקונטקסטים בהם היא מופיעה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כך נוכל להשוות את השיכון הממוצע שמתקבל על מילה לא ידועה, למילים או ביטויים
+ ב
+\begin_inset Formula $training\,data$
+\end_inset
+
+ שה
+\begin_inset Formula $similarity$
+\end_inset
+
+ בין הייצוג הוקטורי שלהם דומה לשיכון הממוצע של המילה הלא ידועה, ולבחור את
+ המתאימה ביותר מבין המילים המתויגות.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בשיטה זו נוכל להחליף מילים לא ידועות במילים מה
+\begin_inset Formula $training\,data$
+\end_inset
+
+ שיהיו הכי קרובות מבחינת ה
+\begin_inset Formula $similarity$
+\end_inset
+
+, שיהוו תחליף לאלה הלא ידועות.
+ כלומר מילה ידועה דומה מספיק בהקשר למילה הלא ידועה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+נצפה שעל התחליף המודל יוכל לתת פרדיקציה טובה יותר כי הוא הופיעו בדאטה המתוייג
+ וכי מילים או ביטויים קצרים עם משמעות סמנטית דומה יופיעו בהקשרים או סביבות
+ סמנטיות דומות, גם בדאטה המתויג וגם בחדש.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לדוגמה:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula $you\,nailed\,it!$
+\end_inset
+
+ מול 
+\begin_inset Formula $u\,nailed\,it!$
+\end_inset
+
+ או אפילו 
+\begin_inset Formula $naaailed$
+\end_inset
+
+ ייתכן כי נוכל להסיק את המשמעות מהקירבה היחסית בין הביטויים, במובן שזה ביטוי
+ 
+\begin_inset Quotes eld
+\end_inset
+
+מפרגן
+\begin_inset Quotes erd
+\end_inset
+
+ ו
+\begin_inset Quotes eld
+\end_inset
+
+חיזוק חיובי
+\begin_inset Quotes erd
+\end_inset
+
+, שנאמר בכל מקרה בהקשר של ביצוע עבודה בצורה טובה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר במקום ממש להגדיר משמעות של הטקסט והמילים המופיעות בו שאינן מוכרות,
+ שלא נצפו גם ככה באימון )שגיאות כתיב וקיצורים לא סטנדרטיים(, נסתכל על ה
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ שלהן ושל השכנים שלהן.
+ כך נוכל לספק חיזוי טוב יותר, כי פחות משנה איזו מילה הופיעה עם איזו מילה,
+ ויותר משנה זה שההקשרים שהן מופיעות דומים, בפרט עבור מילים המכילות קיצור
+ שגיאה או כלשהי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\smallskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+)הערה( שיפור נוסף אפשרי הכולל עיבוד מקדים:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+ייתכן שהטיפול הקודם יהיה יעיל במשמעות סמנטית כאשר יהיו מילים שנרצה להתאים
+ בין קיצור לצורה לא מקוצרת כמו 
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $you$
+\end_inset
+
+, ואולי גם עבור שגיאות כתיב.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אך עבור מילים עם שגיאות כתיב נוכל לעשות עוד עיבוד מקדים ולנסות לשפר את המצב
+ אפילו יותר, כלומר לתקן את ה
+\begin_inset Formula $misspelling$
+\end_inset
+
+ קודם למילים הנכונות הדומות ביותר שנמצא ב
+\begin_inset Formula $V$
+\end_inset
+
+ אוצר המילים המקורי.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+את השגיאות כתיב אפשר לתקן עם מתקן שגיאות כלשהו אם נתון אואפשר למשל לקחת
+ בחשבון בשגיאות כתיב את מרחק העריכה-
+\begin_inset Formula $edit\,distance$
+\end_inset
+
+)כמה תווים צריך לשנות כדי להגיע ממחרוזת אחת לשניה(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+שימוש בו ייתכן ויהיה יעיל עבור מילים בינוניות וארוכות שבהן יש שגיאת כתיב
+ )שימוש בו אולי פחות מתאים בקיצורים כי המרחק עריכה בקיצורים לרוב לא רלוונטי
+ למשל 
+\begin_inset Formula $u$
+\end_inset
+
+ קרוב יותר ל
+\begin_inset Formula $v$
+\end_inset
+
+ מאשר ל
+\begin_inset Formula $you$
+\end_inset
+
+, לכן זה יהיה עיבוד מקדים רק עבור מילים מאורך מסויים(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+תהליך כזה יתאפשר אם יהיה לנו 
+\begin_inset Formula $character-level\,word\,embeddings$
+\end_inset
+
+, נוכל עם המודל שמייצר את השיכונים ברמת האות למצוא ייצוג וקטורי עבור מילים
+ בינוניות/ארוכות עם שגיאות כתיב ולחפש את השכן הקרוב ביותר ב
+\begin_inset Formula $V$
+\end_inset
+
+ אוצר המילים עם הדאטא המתוייג שקיבלנו, ולעבוד בהתאם למילה הידועה.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+בדמיון מסויים ל
+\begin_inset Formula $word\,embeddings$
+\end_inset
+
+ הרגיל, נצפה שמילים עם מספיק אותיות דומות יקבלו ייצוג דומה, ואם למשל נכין
+ ייצוג וקטורי מראש עבור כל אוצר המילים מה
+\begin_inset Formula $data$
+\end_inset
+
+ המתויג 
+\begin_inset Formula $V$
+\end_inset
+
+, מעיין וריאציה של 
+\begin_inset Formula $'one\,hot'$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+כלומר כל מילה תקבל ייצוג וקטורי של השיכון ברמת האות, נוכל להשוות את הייצוגים
+ עבור המילים הרלוונטיות, ולמצוא את השכן הכי קרוב מ
+\begin_inset Formula $V$
+\end_inset
+
+ בחיפוש יעיל לפי הייצוג הוקטורי שהוכן מראש )אולי עם חיפוש בינארי על הייצוג
+ של 
+\begin_inset Formula $V$
+\end_inset
+
+ ממויין(.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+אם השכן הכי קרוב מספיק קרוב )למשל לפי סף פרמטר שנוכל לקבוע( אפשר להחליף
+ את המילה ובכך לשפר את ביצועי המודל עם השגיאה לדומה לה שנראתה בדאטה המתויג.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+לאחר שלב עיבוד מקדים זה נמשיך לשלב שתואר בתחילת הסעיף.
+\end_layout
+
+\end_body
+\end_document

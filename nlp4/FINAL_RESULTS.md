@@ -1,0 +1,317 @@
+# NLP_ex4
+# LogLinear Results:
+    epoch 0
+    TRAIN 
+    accuracy 0.6667487212276215 - loss 0.6156379789249415
+    VALIDATION 
+    accuracy 0.68359375 - loss 0.6366714357536694
+    epoch 1
+    TRAIN 
+    accuracy 0.7164777813299232 - loss 0.5839941698093789
+    VALIDATION 
+    accuracy 0.681640625 - loss 0.6331408103578724
+    epoch 2
+    TRAIN 
+    accuracy 0.7186692774936061 - loss 0.5817173344734289
+    VALIDATION 
+    accuracy 0.7041015625 - loss 0.6320912754945311
+    epoch 3
+    TRAIN 
+    accuracy 0.7202365728900255 - loss 0.581471361762176
+    VALIDATION 
+    accuracy 0.6669921875 - loss 0.6337596793746343
+    epoch 4
+    TRAIN 
+    accuracy 0.7188539002557545 - loss 0.5813095492478013
+    VALIDATION 
+    accuracy 0.7060546875 - loss 0.6326814553540316
+    epoch 5
+    TRAIN 
+    accuracy 0.7204931265984654 - loss 0.5814912398223533
+    VALIDATION 
+    accuracy 0.671875 - loss 0.6345652886411699
+    epoch 6
+    TRAIN 
+    accuracy 0.7190409207161125 - loss 0.5815116842852436
+    VALIDATION 
+    accuracy 0.6875 - loss 0.6329700659116497
+    epoch 7
+    TRAIN 
+    accuracy 0.7198905051150895 - loss 0.5813402301540165
+    VALIDATION 
+    accuracy 0.66796875 - loss 0.6333861955536122
+    epoch 8
+    TRAIN 
+    accuracy 0.719895300511509 - loss 0.5815497969246085
+    VALIDATION 
+    accuracy 0.7041015625 - loss 0.632212390366476
+    epoch 9
+    TRAIN 
+    accuracy 0.7198121803069054 - loss 0.5815165061923577
+    VALIDATION 
+    accuracy 0.66796875 - loss 0.6333423048417899
+    epoch 10
+    TRAIN 
+    accuracy 0.7185685741687979 - loss 0.5814240314863182
+    VALIDATION 
+    accuracy 0.685546875 - loss 0.6325323834025767
+    epoch 11
+    TRAIN 
+    accuracy 0.7191176470588235 - loss 0.5813576114779424
+    VALIDATION 
+    accuracy 0.701171875 - loss 0.6327681946459052
+    epoch 12
+    TRAIN 
+    accuracy 0.7190880754475704 - loss 0.5815688135625352
+    VALIDATION 
+    accuracy 0.6943359375 - loss 0.6317230894856039
+    epoch 13
+    TRAIN 
+    accuracy 0.7195780051150895 - loss 0.5816618129471403
+    VALIDATION 
+    accuracy 0.6728515625 - loss 0.6327964052761672
+    epoch 14
+    TRAIN 
+    accuracy 0.7188115409207161 - loss 0.5813567743757266
+    VALIDATION 
+    accuracy 0.7041015625 - loss 0.6321456117275375
+    epoch 15
+    TRAIN 
+    accuracy 0.7184990409207161 - loss 0.5814616033228319
+    VALIDATION 
+    accuracy 0.734375 - loss 0.6315602530003162
+    epoch 16
+    TRAIN 
+    accuracy 0.7201046994884911 - loss 0.5814515016989048
+    VALIDATION 
+    accuracy 0.6982421875 - loss 0.6320362856695283
+    epoch 17
+    TRAIN 
+    accuracy 0.7180386828644502 - loss 0.5813725889333666
+    VALIDATION 
+    accuracy 0.7255859375 - loss 0.6310933246459172
+    epoch 18
+    TRAIN 
+    accuracy 0.7199192774936062 - loss 0.5814036651776021
+    VALIDATION 
+    accuracy 0.6953125 - loss 0.6320064375686343
+    epoch 19
+    TRAIN 
+    accuracy 0.7193853900255754 - loss 0.5815054104569313
+    VALIDATION 
+    accuracy 0.6669921875 - loss 0.6331925327212957
+
+LogLinear TEST RESULTS:
+
+OVERALL: 
+accuracy 0.7060546875 - loss 0.6041502058506012
+
+RARE: 
+accuracy 0.44
+
+NEGATED: 
+accuracy 0.5645161290322581 
+
+## LogLinear_W2V
+    epoch 0
+    TRAIN 
+    accuracy 0.8325727301790281 - loss 0.3936436366463641
+    VALIDATION 
+    accuracy 0.7763671875 - loss 0.4667416937407416
+    epoch 1
+    TRAIN 
+    accuracy 0.8472921994884911 - loss 0.3603496584555945
+    VALIDATION 
+    accuracy 0.77734375 - loss 0.4659738581373776
+    epoch 2
+    TRAIN 
+    accuracy 0.8477237851662404 - loss 0.3584857213970552
+    VALIDATION 
+    accuracy 0.7802734375 - loss 0.46703136203977724
+    epoch 3
+    TRAIN 
+    accuracy 0.8478308823529411 - loss 0.3577129832418159
+    VALIDATION 
+    accuracy 0.7783203125 - loss 0.46975730780647185
+    epoch 4
+    TRAIN 
+    accuracy 0.8484758631713555 - loss 0.3575936703474756
+    VALIDATION 
+    accuracy 0.78515625 - loss 0.4604394377466825
+    epoch 5
+    TRAIN 
+    accuracy 0.8484638746803069 - loss 0.35742885123469176
+    VALIDATION 
+    accuracy 0.77734375 - loss 0.4623319891740385
+    epoch 6
+    TRAIN 
+    accuracy 0.84826726342711 - loss 0.3574563096433802
+    VALIDATION 
+    accuracy 0.7763671875 - loss 0.4606612550574982
+    epoch 7
+    TRAIN 
+    accuracy 0.8487699808184144 - loss 0.35733482883338635
+    VALIDATION 
+    accuracy 0.78125 - loss 0.4690782108941107
+    epoch 8
+    TRAIN 
+    accuracy 0.8481058184143223 - loss 0.35711848647707745
+    VALIDATION 
+    accuracy 0.7802734375 - loss 0.46425962527259745
+    epoch 9
+    TRAIN 
+    accuracy 0.848415121483376 - loss 0.35734808102936894
+    VALIDATION 
+    accuracy 0.77734375 - loss 0.46070145338828894
+    epoch 10
+    TRAIN 
+    accuracy 0.8500639386189258 - loss 0.3571983725640368
+    VALIDATION 
+    accuracy 0.7822265625 - loss 0.4605621722891935
+    epoch 11
+    TRAIN 
+    accuracy 0.8487068414322251 - loss 0.3573292215339469
+    VALIDATION 
+    accuracy 0.7763671875 - loss 0.4634093760675455
+    epoch 12
+    TRAIN 
+    accuracy 0.8492063618925831 - loss 0.35715588399578385
+    VALIDATION 
+    accuracy 0.77734375 - loss 0.469624826694814
+    epoch 13
+    TRAIN 
+    accuracy 0.8487971547314578 - loss 0.35719609896928545
+    VALIDATION 
+    accuracy 0.78125 - loss 0.471247751478308
+    epoch 14
+    TRAIN 
+    accuracy 0.8485406010230179 - loss 0.3571529230121572
+    VALIDATION 
+    accuracy 0.77734375 - loss 0.46930423378906516
+    epoch 15
+    TRAIN 
+    accuracy 0.8478748401534527 - loss 0.3572150721613492
+    VALIDATION 
+    accuracy 0.779296875 - loss 0.4631135228917036
+    epoch 16
+    TRAIN 
+    accuracy 0.8478085038363172 - loss 0.35731022228663284
+    VALIDATION 
+    accuracy 0.7802734375 - loss 0.4620660168387416
+    epoch 17
+    TRAIN 
+    accuracy 0.8481010230179029 - loss 0.3569647360090744
+    VALIDATION 
+    accuracy 0.78125 - loss 0.4606457989107309
+    epoch 18
+    TRAIN 
+    accuracy 0.8481058184143223 - loss 0.3571432868732039
+    VALIDATION 
+    accuracy 0.7734375 - loss 0.46267406622985385
+    epoch 19
+    TRAIN 
+    accuracy 0.8487100383631714 - loss 0.35728306586171754
+    VALIDATION 
+    accuracy 0.7734375 - loss 0.46730017240528987
+    tensor([40]) out of 50
+    tensor([38]) out of 62
+LogLinear_W2V RESULTS:
+TEST Overall: accuracy 0.83984375 - loss 0.3978482197045907
+RARE: accuracy 0.8
+NEGATED: accuracy 0.6129032258064516 
+
+# LSTM Results:
+# 4 EPOCHS
+    epoch 0
+    TRAIN 
+        accuracy 0.8272482416879795 - loss 0.37937610397994465
+    VALIDATION 
+        accuracy 0.7841796875 - loss 0.4963321495024502
+    epoch 1
+    TRAIN 
+        accuracy 0.8715369245524297 - loss 0.30159029451683705
+    VALIDATION 
+        accuracy 0.73828125 - loss 0.503177006361625
+    epoch 2
+    TRAIN 
+        accuracy 0.8870156649616368 - loss 0.2707015675934337
+    VALIDATION 
+        accuracy 0.759765625 - loss 0.46568911567726445
+    epoch 3
+    TRAIN 
+        accuracy 0.8998569373401536 - loss 0.24624476055145988
+    VALIDATION 
+        accuracy 0.7958984375 - loss 0.4748171504544416
+    tensor([[33]]) out of 50
+    tensor([[38]]) out of 62
+    LSTM RESULTS:
+    TEST Overall: accuracy 0.848125 - loss 0.3767831529129353
+    RARE: accuracy 0.66
+    NEGATED: accuracy 0.6129032258064516 
+
+
+LSTM RESULTS:
+TEST Overall: accuracy 0.828125 - loss 0.3900664560675011
+RARE: accuracy 0.72
+NEGATED: accuracy 0.5967741935483871 
+    
+    
+
+
+# 10 EPOCHS
+    epoch 0
+    TRAIN 
+        accuracy 0.8308639705882354 - loss 0.3737724163438053
+    VALIDATION 
+        accuracy 0.724609375 - loss 0.5768971735524246
+    epoch 1
+    TRAIN 
+        accuracy 0.8547650255754476 - loss 0.32929540914588173
+    VALIDATION 
+        accuracy 0.7373046875 - loss 0.5167005109592537
+    epoch 2
+    TRAIN 
+        accuracy 0.8682368925831202 - loss 0.30324963443972475
+    VALIDATION 
+        accuracy 0.7265625 - loss 0.6339185152272933
+    epoch 3
+    TRAIN 
+        accuracy 0.8780498721227621 - loss 0.2836009502926902
+    VALIDATION 
+        accuracy 0.7421875 - loss 0.5679984395860629
+    epoch 4
+    TRAIN 
+        accuracy 0.8885917519181585 - loss 0.26522549163495607
+    VALIDATION 
+        accuracy 0.7490234375 - loss 0.5302204961088819
+    epoch 5
+    TRAIN 
+        accuracy 0.8943150575447569 - loss 0.2527509984479156
+    VALIDATION 
+        accuracy 0.7470703125 - loss 0.5597550822823223
+    epoch 6
+    TRAIN 
+        accuracy 0.9011916560102301 - loss 0.23888511044484279
+    VALIDATION 
+        accuracy 0.7607421875 - loss 0.5562414785421765
+    epoch 7
+    TRAIN 
+        accuracy 0.9075863171355499 - loss 0.22834178159884894
+    VALIDATION 
+        accuracy 0.7587890625 - loss 0.6242596523190542
+    epoch 8
+    TRAIN 
+        accuracy 0.9119341432225064 - loss 0.21787796618246552
+    VALIDATION 
+        accuracy 0.7548828125 - loss 0.6046234325338844
+    epoch 9
+    TRAIN 
+        accuracy 0.9175439578005116 - loss 0.20643296332624775
+    VALIDATION 
+        accuracy 0.7509765625 - loss 0.6137795478396129
+    tensor([[28]]) out of 50
+    tensor([[33]]) out of 62
+LSTM10 RESULTS:
+TEST Overall: accuracy 0.7998046875 - loss 0.48382876275087483
+RARE: accuracy 0.56
+NEGATED: accuracy 0.532258064516129 

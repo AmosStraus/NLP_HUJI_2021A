@@ -1,0 +1,47 @@
+['John', 'likes', 'NLP', 'He', 'Mary', 'machine', 'learning', 'Deep', 'subfield', 'wrote', 'post', 'about', 'got'] 13
+SVD 2,3,4
+john_with_he
+0.999
+john_with_subfield
+-0.155
+deep_with_machine
+0.933
+EVD 2,3,4
+john_with_he
+0.862
+john_with_subfield
+-0.15
+deep_with_machine
+0.913
+SVD 6,7
+wrote_with_post
+0.243
+like_with_like
+1.0
+EVD 6,7
+wrote_with_post
+0.96
+like_with_like
+1.0
+
+Question 4:
+8.
+SVD Disadvantages:
+- SVD method may suffer from sparsity, require manipulations and computation on large matrix for big vocabularies.
+- in SVD embedding we cut many of the variance by removing a lot of the columns/rows in the embedding matrix.
+ like that we may have 2 different words that had different vectors but after cutting 70% of the entries their first 30% entries
+ are the same, resulting in cosine similarity of 1 between these words, even though in the rest of the entries we removed (the less
+ significant 70% we may have substantial differences)
+
+Question 5:
+a. by calculating the slope of the line between the 'King' and 'Queen' embedding, call it t.
+Then we can get the 'Prince' embedding call it (a,b) and look for the word w with embedding(w) = (c,d)
+such that (c,d) lies exactly on the line that crosses (a,b) with slope t or the one that is the closest.
+for example by finding w' with embedding(w') = (c',d'). that minimizes the expression:
+min {t - ((d - d') / (c - c'))}
+
+b. The assumption made in the skip-gram model is that similar word will appear together.
+for example hotel-receptionist will yield the same relation in respect to bank the result: bank-teller.
+But bank can have different meaning such as (West-bank) or in (By the time we reached the opposite bank, the boat was sinking fast.)
+or in (a bank of switches) as in row of similar things.
+They have different meaning and different contexts.
